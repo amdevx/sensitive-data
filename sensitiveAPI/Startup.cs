@@ -14,6 +14,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using sensitiveAPI.Configuration;
 using sensitiveAPI.Data;
+using sensitiveAPI.Repository;
 
 namespace sensitiveAPI
 {
@@ -41,6 +42,7 @@ namespace sensitiveAPI
             services.AddSingleton<IDatabaseConfig>(c => c.GetRequiredService<SensitiveDataConfiguration>());
             services.AddControllers();
             services.AddDbContext<SensitiveContext>(x => x.UseSqlServer(sensitiveConfig.DatabaseConnectionString));
+            services.AddScoped<ISensitiveRepository, SensitiveRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
