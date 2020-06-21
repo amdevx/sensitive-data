@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1CE76DA7-157A-4BB1-8C55-C4B426F325E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sensitiveAPI", "sensitiveAPI\sensitiveAPI.csproj", "{89B85A7E-9161-46AA-A4CF-2E734F58C324}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89B85A7E-9161-46AA-A4CF-2E734F58C324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89B85A7E-9161-46AA-A4CF-2E734F58C324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89B85A7E-9161-46AA-A4CF-2E734F58C324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89B85A7E-9161-46AA-A4CF-2E734F58C324}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{89B85A7E-9161-46AA-A4CF-2E734F58C324} = {1CE76DA7-157A-4BB1-8C55-C4B426F325E5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A23C96B2-CEB1-46F2-8174-9476A50595C0}
+	EndGlobalSection
+EndGlobal
