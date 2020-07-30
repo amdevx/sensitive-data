@@ -16,10 +16,11 @@ namespace sensitiveAPI.Repository
             _context = context;
         }
 
-        public void Add(SensitiveDataEntity sensitiveDataEntity)
+        public long Add(SensitiveDataEntity sensitiveDataEntity)
         {
             _context.SensitiveDataEntities.Add(sensitiveDataEntity);
             _context.SaveChanges();
+            return sensitiveDataEntity.Id; 
         }
 
         public void Update(SensitiveDataEntity sensitiveDataEntity)

@@ -6,7 +6,7 @@ namespace sensitiveAPI.Repository
 {
     public interface ISensitiveRepository
     {
-        void Add(SensitiveDataEntity sensitiveDataEntity);
+        long Add(SensitiveDataEntity sensitiveDataEntity);
         void Update(SensitiveDataEntity sensitiveDataEntity);
         void Remove(SensitiveDataEntity sensitiveDataEntity);
         Task<List<string>> GetAllActiveEncryptionKeyNamesAsync();
